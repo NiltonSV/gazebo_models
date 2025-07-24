@@ -10,4 +10,4 @@ export GZ_SIM_RESOURCE_PATH=/path-to-gazebo_models
 
 # MobiLab
 
-![image](https://github.com/NiltonSV/gazebo_models/mobilab.png)
+![image](https://github.com/NiltonSV/gazebo_models/blob/main/mobilab.png)
