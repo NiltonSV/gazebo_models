@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.10">
+    <model name="Bambu_Lab_X1_Carbon">
+        <static>true</static>
+        <link name="body">
+            <pose>0 0 0 0 0 0</pose>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://Bambu_Lab_X1_Carbon/meshes/Bambu.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://Bambu_Lab_X1_Carbon/meshes/Bambu.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+    </model>
+</sdf>

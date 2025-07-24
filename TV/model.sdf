@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.10">
+    <model name="TV">
+        <static>true</static>
+        <link name="body">
+            <pose>0 0 0 0 0 0</pose>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://TV/meshes/TV.obj</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.05 0.05 0.05 1</ambient>
+                    <diffuse>0.05 0.05 0.05 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                </material>
+            </visual>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://TV/meshes/TV.obj</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+    </model>
+</sdf>
