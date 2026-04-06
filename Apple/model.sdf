@@ -3,12 +3,28 @@
     <model name="apple">
         <pose> 0 0 0.5 0 0 0</pose>
         <static> false </static>
+
+        <link name="apple_stem_link">
+            <!-- <inertial>
+                <mass>0.001</mass>
+                <inertia>
+                <ixx>0.000001</ixx>
+                <iyy>0.000001</iyy>
+                <izz>0.000001</izz>
+                </inertia>
+            </inertial> -->
+        </link>
+        <joint name="apple_stem_joint" type="revolute">
+            <child>apple_link</child>
+            <parent>apple_stem_link</parent>
+        </joint>
+
         <link name="apple_link">
             <collision name="apple_collision">
                 <geometry>
                     <mesh>
                         <uri>model://Apple/meshes/apple.dae</uri>
-                        <scale>1 1 1</scale>
+                        <scale>0.6 0.6 0.6</scale>
                     </mesh>
                 </geometry>
             </collision>
@@ -17,14 +33,14 @@
                 <geometry>
                     <mesh>
                         <uri>model://Apple/meshes/apple.dae</uri>
-                        <scale>1 1 1</scale>
+                        <scale>0.6 0.6 0.6</scale>
                     </mesh>
                 </geometry>
             </visual>
 
             <inertial>
                 <mass> 0.125 </mass>
-                <pose>0 0 0.045 0 0 0</pose>
+                <pose>0 0 0.03 0 0 0</pose>
                 <inertia>
                     <ixx>0.0000984</ixx>
                     <ixy>0.0</ixy>
